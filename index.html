@@ -1,0 +1,1021 @@
+<!doctype html>
+<html lang="fr" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MIXTE® — Studio de design &amp; d’expériences digitales</title>
+  <meta name="author" content="Ebubekir ARTI">
+  <meta name="description" content="MIXTE est un studio digital indépendant basé à Paris. Sites 3D, WebGL, identités de marque et expériences immersives pour les marques qui visent la première place.">
+  <meta name="theme-color" content="#0d0e0a">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="MIXTE® — Toujours un tour d’avance">
+  <meta property="og:description" content="Sites 3D, identités de marque et expériences immersives. Studio digital indépendant, Paris.">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@300..900&family=JetBrains+Mono:wght@400;500;700&family=Caveat:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="preload" href="assets/fonts/MonaSans.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script>document.documentElement.classList.replace('no-js','js');</script>
+</head>
+<body>
+  <a class="skip" href="#main">Aller au contenu</a>
+
+  <!-- ============ PRELOADER — feux de départ ============ -->
+  <div class="loader" data-loader aria-hidden="true">
+    <div class="loader__inner">
+      <div class="loader__lights">
+        <div class="light"><i></i><i></i></div>
+        <div class="light"><i></i><i></i></div>
+        <div class="light"><i></i><i></i></div>
+        <div class="light"><i></i><i></i></div>
+        <div class="light"><i></i><i></i></div>
+      </div>
+      <div class="loader__row mono">
+        <span data-loader-status>Allumage des moteurs</span>
+        <span><b data-loader-count>0</b>%</span>
+      </div>
+      <div class="loader__bar"><i data-loader-bar></i></div>
+    </div>
+    <p class="loader__brand">MIXTE<sup>®</sup></p>
+  </div>
+
+  <!-- ============ CURSEUR ============ -->
+  <div class="cursor" aria-hidden="true">
+    <div class="cursor__ring"><span class="cursor__label" data-cursor-label>Voir</span></div>
+    <div class="cursor__dot"></div>
+  </div>
+
+  <div class="grain" aria-hidden="true"></div>
+
+  <!-- ============ NAVIGATION ============ -->
+  <header class="nav" data-nav>
+    <a href="#top" class="nav__brand" aria-label="MIXTE — retour en haut">
+      <svg class="logo-mark" viewBox="0 0 32 32" aria-hidden="true">
+        <circle cx="12" cy="16" r="9"/>
+        <circle cx="20" cy="16" r="9"/>
+        <path d="M16 7.94 A9 9 0 0 1 16 24.06 A9 9 0 0 1 16 7.94 Z"/>
+      </svg>
+      <span class="logo-word">MIXTE<sup>®</sup></span>
+    </a>
+
+    <nav class="nav__links" aria-label="Navigation principale">
+      <a href="#travaux" class="nav__link"><span data-hover="Travaux">Travaux</span></a>
+      <a href="#expertises" class="nav__link"><span data-hover="Expertises">Expertises</span></a>
+      <a href="#process" class="nav__link"><span data-hover="Process">Process</span></a>
+      <a href="#distinctions" class="nav__link"><span data-hover="Distinctions">Distinctions</span></a>
+      <a href="#journal" class="nav__link"><span data-hover="Journal">Journal</span></a>
+    </nav>
+
+    <div class="nav__right">
+      <span class="nav__clock mono"><i class="pulse"></i>Paris <time data-clock>--:--</time></span>
+      <a href="#contact" class="btn btn--lime magnetic nav__cta"><span class="btn__inner"><span class="btn__text" data-hover="Démarrer un projet">Démarrer un projet</span></span></a>
+      <button class="burger" type="button" aria-expanded="false" aria-controls="menu" data-menu-toggle>
+        <span class="burger__lines"><i></i><i></i></span>
+        <span class="burger__label mono" data-menu-label>Menu</span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ============ MENU PLEIN ÉCRAN ============ -->
+  <div class="menu" id="menu" data-menu aria-hidden="true">
+    <div class="menu__bg"></div>
+    <div class="menu__inner">
+      <nav class="menu__nav" aria-label="Menu">
+        <ol class="menu__list">
+          <li><a href="#travaux" data-menu-link data-preview="0"><span class="mono">01</span><span class="menu__word">Travaux</span></a></li>
+          <li><a href="#expertises" data-menu-link data-preview="1"><span class="mono">02</span><span class="menu__word">Expertises</span></a></li>
+          <li><a href="#process" data-menu-link data-preview="2"><span class="mono">03</span><span class="menu__word">Process</span></a></li>
+          <li><a href="#distinctions" data-menu-link data-preview="3"><span class="mono">04</span><span class="menu__word">Distinctions</span></a></li>
+          <li><a href="#journal" data-menu-link data-preview="4"><span class="mono">05</span><span class="menu__word">Journal</span></a></li>
+          <li><a href="#contact" data-menu-link data-preview="5"><span class="mono">06</span><span class="menu__word">Contact</span></a></li>
+        </ol>
+      </nav>
+      <div class="menu__preview" aria-hidden="true">
+        <div class="menu__card" data-menu-card>
+          <span class="menu__card-num" data-menu-num>01</span>
+          <span class="menu__card-text mono" data-menu-text>Projets sélectionnés — 2019/2026</span>
+        </div>
+      </div>
+      <div class="menu__foot">
+        <div>
+          <p class="mono menu__label">Nouveau projet</p>
+          <a href="mailto:bonjour@mixte.studio" class="menu__mail">bonjour@mixte.studio</a>
+        </div>
+        <div class="menu__socials">
+          <a href="#" aria-label="Instagram">Instagram</a>
+          <a href="#" aria-label="LinkedIn">LinkedIn</a>
+          <a href="#" aria-label="Behance">Behance</a>
+          <a href="#" aria-label="Awwwards">Awwwards</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <main id="main">
+
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="top" data-theme="dark">
+      <div class="hero__bg" aria-hidden="true">
+        <div class="hero__fallback"></div>
+        <canvas class="hero__gl" data-hero-gl></canvas>
+      </div>
+
+      <div class="hero__top">
+        <p class="eyebrow mono" data-intro>Studio digital indépendant — depuis 2019</p>
+        <p class="eyebrow mono hero__coords" data-intro>48°51′N · 2°21′E</p>
+      </div>
+
+      <h1 class="hero__title" aria-label="Toujours un tour d’avance.">
+        <span class="hero__line" data-parallax="-0.08"><span class="hero__word" data-split>Toujours</span></span>
+        <span class="hero__line hero__line--right" data-parallax="0.05">
+          <span class="hero__note" data-intro aria-hidden="true">
+            <span class="script">sur la concurrence&nbsp;!</span>
+            <svg viewBox="0 0 90 50" class="hero__arrow"><path d="M4 8 C 30 4, 60 14, 78 40 M66 38 L79 42 L80 28" /></svg>
+          </span>
+          <span class="hero__word" data-split>un tour</span>
+        </span>
+        <span class="hero__line" data-parallax="-0.03"><span class="hero__word hero__word--accent" data-split>d’avance.</span></span>
+      </h1>
+
+      <div class="hero__bottom">
+        <p class="hero__lead" data-intro>Nous concevons des sites 3D, des marques et des expériences immersives pour celles et ceux qui refusent la deuxième place.</p>
+
+        <div class="slot" data-intro>
+          <span class="slot__flag" aria-hidden="true">
+            <svg viewBox="0 0 40 40">
+              <defs>
+                <pattern id="chk" width="6" height="6" patternUnits="userSpaceOnUse"><rect width="3" height="3" fill="currentColor"/><rect x="3" y="3" width="3" height="3" fill="currentColor"/></pattern>
+              </defs>
+              <path d="M8 36 L22 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              <path d="M32 36 L18 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              <path d="M21.5 7 L34 4 L31 15 L18.5 18 Z" fill="url(#chk)" stroke="currentColor" stroke-width="1"/>
+              <path d="M18.5 7 L6 4 L9 15 L21.5 18 Z" fill="url(#chk)" stroke="currentColor" stroke-width="1"/>
+            </svg>
+          </span>
+          <span class="slot__body">
+            <span class="mono slot__label">Prochain départ</span>
+            <strong class="slot__date">Janvier 2027</strong>
+          </span>
+          <span class="slot__count mono"><i class="pulse"></i>2 places</span>
+        </div>
+
+        <a href="#manifeste" class="scroll-badge" aria-label="Faire défiler vers le manifeste" data-intro>
+          <svg viewBox="0 0 120 120" class="scroll-badge__ring" aria-hidden="true">
+            <defs><path id="circ" d="M60,60 m-46,0 a46,46 0 1,1 92,0 a46,46 0 1,1 -92,0"/></defs>
+            <text><textPath href="#circ" textLength="286">Faites défiler • Découvrez le studio •</textPath></text>
+          </svg>
+          <span class="scroll-badge__arrow" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M12 4v16M5 13l7 7 7-7"/></svg>
+          </span>
+        </a>
+      </div>
+    </section>
+
+    <!-- ============ MANIFESTE ============ -->
+    <section class="manifesto" id="manifeste" data-theme="light">
+      <div class="container">
+        <div class="manifesto__head">
+          <p class="eyebrow mono">(01) — Manifeste</p>
+          <p class="eyebrow mono">Paris · Remote · Monde</p>
+        </div>
+        <p class="manifesto__text" data-words>
+          Un site n’est pas une vitrine. C’est une expérience <span class="chip chip--a" aria-hidden="true"><i></i></span> réglée comme une monoplace <span class="chip chip--b" aria-hidden="true"><i></i></span> et racontée comme une histoire. De la stratégie au dernier pixel, nous construisons ce qui fait <em>la&nbsp;différence</em> <span class="chip chip--c" aria-hidden="true">♥‿♥</span>
+        </p>
+        <div class="manifesto__foot">
+          <div class="manifesto__sign">
+            <span class="script">— L’équipe Mixte</span>
+          </div>
+          <ul class="manifesto__values">
+            <li><span class="mono">01</span>Exigence du détail</li>
+            <li><span class="mono">02</span>Performance mesurée</li>
+            <li><span class="mono">03</span>Récit avant la technique</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CLASSEMENT (CHIFFRES) ============ -->
+    <section class="tower" data-theme="dark">
+      <div class="container tower__grid">
+        <div class="tower__intro">
+          <p class="eyebrow mono" data-reveal>(02) — Classement 2026</p>
+          <h2 class="h-display h-display--sm" data-reveal>Les chiffres<br>parlent <span class="lime nowrap">d’eux-mêmes.</span></h2>
+          <p class="tower__lead" data-reveal>Depuis 2019, nous accompagnons des startups ambitieuses et des maisons établies dans quatorze pays. Ce qui nous obsède&#8239;: la performance — mesurée, pas promise.</p>
+          <a href="#travaux" class="link-arrow" data-reveal>Voir les projets <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </div>
+
+        <div class="board" role="table" aria-label="Chiffres clés du studio">
+          <div class="board__top mono" aria-hidden="true">
+            <span><i class="pulse"></i>Live timing</span>
+            <span>Saison 2026 · Tour 07/07</span>
+          </div>
+          <div class="board__head mono" role="row">
+            <span role="columnheader">Pos</span>
+            <span role="columnheader">Discipline</span>
+            <span role="columnheader">Score</span>
+            <span role="columnheader" class="board__gap-h">Écart</span>
+          </div>
+          <div class="board__row is-leader" role="row" data-reveal>
+            <span class="board__pos" role="cell">P1</span>
+            <span class="board__name" role="cell"><i class="board__team" style="--team:var(--lime)"></i>Projets livrés</span>
+            <span class="board__val" role="cell"><b data-count="142">0</b>+</span>
+            <span class="board__gap mono" role="cell"><em class="tag tag--violet">Meilleur tour</em></span>
+          </div>
+          <div class="board__row" role="row" data-reveal>
+            <span class="board__pos" role="cell">P2</span>
+            <span class="board__name" role="cell"><i class="board__team" style="--team:var(--violet)"></i>Distinctions internationales</span>
+            <span class="board__val" role="cell"><b data-count="37">0</b></span>
+            <span class="board__gap mono" role="cell">+9 en 2026</span>
+          </div>
+          <div class="board__row" role="row" data-reveal>
+            <span class="board__pos" role="cell">P3</span>
+            <span class="board__name" role="cell"><i class="board__team" style="--team:var(--coral)"></i>Clients qui reviennent</span>
+            <span class="board__val" role="cell"><b data-count="96">0</b>%</span>
+            <span class="board__gap mono" role="cell">Fidélité ~4 ans</span>
+          </div>
+          <div class="board__row" role="row" data-reveal>
+            <span class="board__pos" role="cell">P4</span>
+            <span class="board__name" role="cell"><i class="board__team" style="--team:var(--lav)"></i>Pays servis</span>
+            <span class="board__val" role="cell"><b data-count="14">0</b></span>
+            <span class="board__gap mono" role="cell">EU · US · MENA</span>
+          </div>
+          <div class="board__row" role="row" data-reveal>
+            <span class="board__pos" role="cell">P5</span>
+            <span class="board__name" role="cell"><i class="board__team" style="--team:var(--cream)"></i>Chargement moyen</span>
+            <span class="board__val" role="cell"><b data-count="0.8" data-decimals="1">0</b>s</span>
+            <span class="board__gap mono" role="cell">Web Vitals ✓</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ TRAVAUX ============ -->
+    <section class="work" id="travaux" data-theme="dark">
+      <div class="work__pin">
+        <div class="work__head">
+          <div>
+            <p class="eyebrow mono">(03) — Travaux sélectionnés</p>
+            <h2 class="work__title">Le palmarès<sup class="mono">(06)</sup></h2>
+          </div>
+          <p class="work__intro">Une sélection de projets récents — sites immersifs, lancements produits et identités. Chacun pensé pour gagner.</p>
+        </div>
+
+        <div class="work__viewport">
+          <div class="work__track" data-work-track>
+
+            <article class="card" data-cursor="Voir le projet">
+              <a href="projet.html?p=volta" class="card__link">
+                <div class="card__media">
+                  <svg class="cover cover--volta" viewBox="0 0 600 750" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+                    <defs>
+                      <linearGradient id="v-bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0d0e0a"/><stop offset="1" stop-color="#1d2116"/></linearGradient>
+                      <radialGradient id="v-glow" cx="50%" cy="62%" r="55%"><stop offset="0" stop-color="#d2ff00" stop-opacity=".45"/><stop offset="1" stop-color="#d2ff00" stop-opacity="0"/></radialGradient>
+                    </defs>
+                    <rect width="600" height="750" fill="url(#v-bg)"/>
+                    <rect width="600" height="750" fill="url(#v-glow)"/>
+                    <g stroke="#d2ff00" stroke-linecap="round" class="cover__speed">
+                      <line x1="-20" y1="300" x2="180" y2="300" stroke-opacity=".7" stroke-width="2"/>
+                      <line x1="-20" y1="340" x2="120" y2="340" stroke-opacity=".4" stroke-width="2"/>
+                      <line x1="-20" y1="520" x2="150" y2="520" stroke-opacity=".6" stroke-width="2"/>
+                      <line x1="-20" y1="560" x2="90" y2="560" stroke-opacity=".3" stroke-width="2"/>
+                      <line x1="440" y1="250" x2="620" y2="250" stroke-opacity=".35" stroke-width="2"/>
+                      <line x1="480" y1="600" x2="620" y2="600" stroke-opacity=".5" stroke-width="2"/>
+                    </g>
+                    <g class="cover__spin" style="transform-origin:300px 430px">
+                      <circle cx="300" cy="430" r="200" fill="none" stroke="#d2ff00" stroke-width="2"/>
+                      <circle cx="300" cy="430" r="168" fill="none" stroke="#f4f4ed" stroke-opacity=".25" stroke-dasharray="3 9"/>
+                      <circle cx="300" cy="430" r="122" fill="none" stroke="#d2ff00" stroke-opacity=".55" stroke-width="26" stroke-dasharray="46 16"/>
+                      <g stroke="#f4f4ed" stroke-opacity=".7" stroke-width="3">
+                        <line x1="300" y1="430" x2="300" y2="330"/>
+                        <line x1="300" y1="430" x2="395" y2="461"/>
+                        <line x1="300" y1="430" x2="359" y2="511"/>
+                        <line x1="300" y1="430" x2="241" y2="511"/>
+                        <line x1="300" y1="430" x2="205" y2="461"/>
+                      </g>
+                      <circle cx="300" cy="430" r="38" fill="#d2ff00"/>
+                      <circle cx="300" cy="430" r="12" fill="#0d0e0a"/>
+                    </g>
+                    <text x="40" y="112" class="svg-display" font-size="92" font-weight="800" fill="#f4f4ed" letter-spacing="-3">VOLTA</text>
+                    <text x="44" y="150" class="svg-mono" font-size="14" fill="#d2ff00" letter-spacing="3">E-SUV · LANCEMENT 2026</text>
+                    <text x="44" y="710" class="svg-mono" font-size="13" fill="#f4f4ed" fill-opacity=".5" letter-spacing="2">0—100 KM/H · 3,4 S</text>
+                  </svg>
+                </div>
+                <div class="card__meta">
+                  <span class="card__num mono">01</span>
+                  <div class="card__info">
+                    <h3 class="card__name">Volta Motors</h3>
+                    <p class="card__desc">Lancement d’un SUV électrique &amp; configurateur 3D temps réel</p>
+                  </div>
+                  <span class="card__year mono">2026</span>
+                </div>
+                <ul class="card__tags mono"><li>WebGL</li><li>Configurateur 3D</li><li>E-commerce</li></ul>
+              </a>
+            </article>
+
+            <article class="card" data-cursor="Voir le projet">
+              <a href="projet.html?p=aube" class="card__link">
+                <div class="card__media">
+                  <svg class="cover cover--aube" viewBox="0 0 600 750" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+                    <defs>
+                      <linearGradient id="a-bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f8eee3"/><stop offset="1" stop-color="#f1cbb5"/></linearGradient>
+                      <radialGradient id="a-sun" cx="50%" cy="45%" r="55%"><stop offset="0" stop-color="#fff6e8"/><stop offset=".55" stop-color="#ffb48a"/><stop offset="1" stop-color="#ff6f45"/></radialGradient>
+                      <linearGradient id="a-arch" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#eec0a5"/><stop offset="1" stop-color="#c77d64"/></linearGradient>
+                      <clipPath id="a-clip"><path d="M140 750 V340 A160 160 0 0 1 460 340 V750 Z"/></clipPath>
+                    </defs>
+                    <rect width="600" height="750" fill="url(#a-bg)"/>
+                    <path d="M140 750 V340 A160 160 0 0 1 460 340 V750 Z" fill="url(#a-arch)"/>
+                    <g clip-path="url(#a-clip)">
+                      <circle class="cover__float" cx="300" cy="420" r="105" fill="url(#a-sun)"/>
+                      <rect x="140" y="560" width="320" height="190" fill="#7d3b2c" fill-opacity=".35"/>
+                    </g>
+                    <g class="cover__float cover__float--slow">
+                      <rect x="258" y="520" width="84" height="160" rx="16" fill="#fff8ee" fill-opacity=".92"/>
+                      <rect x="280" y="486" width="40" height="40" rx="7" fill="#2a1d17"/>
+                      <rect x="274" y="590" width="52" height="2" fill="#2a1d17" fill-opacity=".5"/>
+                      <text x="300" y="614" text-anchor="middle" class="svg-mono" font-size="9" fill="#2a1d17" letter-spacing="2">AUBE Nº1</text>
+                    </g>
+                    <text x="300" y="110" text-anchor="middle" class="svg-display" font-size="30" font-weight="500" fill="#5a2f22" letter-spacing="12">MAISON AUBE</text>
+                    <text x="300" y="146" text-anchor="middle" class="svg-mono" font-size="12" fill="#5a2f22" fill-opacity=".7" letter-spacing="4">EAU DE PARFUM — PARIS</text>
+                  </svg>
+                </div>
+                <div class="card__meta">
+                  <span class="card__num mono">02</span>
+                  <div class="card__info">
+                    <h3 class="card__name">Maison Aube</h3>
+                    <p class="card__desc">Boutique en ligne &amp; storytelling sensoriel pour une parfumerie de luxe</p>
+                  </div>
+                  <span class="card__year mono">2026</span>
+                </div>
+                <ul class="card__tags mono"><li>E-commerce</li><li>Direction artistique</li><li>Motion</li></ul>
+              </a>
+            </article>
+
+            <article class="card" data-cursor="Voir le projet">
+              <a href="projet.html?p=orbe" class="card__link">
+                <div class="card__media">
+                  <svg class="cover cover--orbe" viewBox="0 0 600 750" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+                    <defs>
+                      <linearGradient id="o-bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#e3e9f3"/><stop offset="1" stop-color="#c6c0ec"/></linearGradient>
+                      <radialGradient id="o-sph" cx="34%" cy="30%" r="78%"><stop offset="0" stop-color="#ffffff"/><stop offset=".22" stop-color="#ece6ff"/><stop offset=".52" stop-color="#b5a5ff"/><stop offset=".82" stop-color="#6c5ce7"/><stop offset="1" stop-color="#d2ff00"/></radialGradient>
+                      <filter id="o-blur" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="36"/></filter>
+                    </defs>
+                    <rect width="600" height="750" fill="url(#o-bg)"/>
+                    <circle cx="470" cy="170" r="120" fill="#ffc9de" filter="url(#o-blur)"/>
+                    <circle cx="110" cy="520" r="110" fill="#d2ff00" fill-opacity=".55" filter="url(#o-blur)"/>
+                    <circle class="cover__float" cx="300" cy="330" r="172" fill="url(#o-sph)"/>
+                    <g class="cover__float cover__float--slow">
+                      <rect x="90" y="470" width="420" height="200" rx="28" fill="#ffffff" fill-opacity=".6" stroke="#ffffff"/>
+                      <text x="122" y="518" class="svg-mono" font-size="13" fill="#4b4a6b" letter-spacing="2">SOLDE TOTAL</text>
+                      <text x="122" y="572" class="svg-display" font-size="40" font-weight="600" fill="#181520">€ 24 580</text>
+                      <polyline points="122,640 180,620 230,630 290,592 350,604 410,566 478,576" fill="none" stroke="#6c5ce7" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                      <circle cx="478" cy="576" r="8" fill="#d2ff00" stroke="#181520" stroke-width="2"/>
+                    </g>
+                    <text x="40" y="86" class="svg-display" font-size="42" font-weight="700" fill="#181520" letter-spacing="-1">orbe</text>
+                    <text x="560" y="84" text-anchor="end" class="svg-mono" font-size="12" fill="#181520" fill-opacity=".6" letter-spacing="2">FINANCE</text>
+                  </svg>
+                </div>
+                <div class="card__meta">
+                  <span class="card__num mono">03</span>
+                  <div class="card__info">
+                    <h3 class="card__name">Orbe Finance</h3>
+                    <p class="card__desc">Identité, application et site produit pour une néobanque européenne</p>
+                  </div>
+                  <span class="card__year mono">2025</span>
+                </div>
+                <ul class="card__tags mono"><li>Branding</li><li>UX/UI</li><li>Site produit</li></ul>
+              </a>
+            </article>
+
+            <article class="card" data-cursor="Voir le projet">
+              <a href="projet.html?p=nebuleuse" class="card__link">
+                <div class="card__media">
+                  <svg class="cover cover--neb" viewBox="0 0 600 750" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+                    <defs>
+                      <linearGradient id="n-bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#140f1d"/><stop offset=".55" stop-color="#2b1744"/><stop offset="1" stop-color="#181520"/></linearGradient>
+                      <linearGradient id="n-sun" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffd76b"/><stop offset=".5" stop-color="#ff5a36"/><stop offset="1" stop-color="#c2189b"/></linearGradient>
+                      <mask id="n-mask">
+                        <rect width="600" height="420" fill="#fff"/>
+                        <rect y="318" width="600" height="6" fill="#000"/>
+                        <rect y="342" width="600" height="9" fill="#000"/>
+                        <rect y="366" width="600" height="12" fill="#000"/>
+                        <rect y="390" width="600" height="16" fill="#000"/>
+                      </mask>
+                    </defs>
+                    <rect width="600" height="750" fill="url(#n-bg)"/>
+                    <g fill="#f4f4ed">
+                      <circle cx="60" cy="210" r="1.6"/><circle cx="140" cy="260" r="1"/><circle cx="520" cy="220" r="1.8"/><circle cx="470" cy="300" r="1"/><circle cx="90" cy="330" r="1.2"/><circle cx="560" cy="340" r="1"/><circle cx="230" cy="200" r="1"/><circle cx="380" cy="190" r="1.4"/>
+                    </g>
+                    <circle class="cover__pulse" cx="300" cy="340" r="160" fill="url(#n-sun)" mask="url(#n-mask)"/>
+                    <g stroke="#ff5a36" stroke-opacity=".7" stroke-width="1.5">
+                      <line x1="0" y1="420" x2="600" y2="420"/>
+                      <line x1="0" y1="438" x2="600" y2="438"/>
+                      <line x1="0" y1="462" x2="600" y2="462"/>
+                      <line x1="0" y1="496" x2="600" y2="496"/>
+                      <line x1="0" y1="544" x2="600" y2="544"/>
+                      <line x1="0" y1="612" x2="600" y2="612"/>
+                      <line x1="0" y1="710" x2="600" y2="710"/>
+                      <line x1="300" y1="420" x2="300" y2="750"/>
+                      <line x1="300" y1="420" x2="200" y2="750"/>
+                      <line x1="300" y1="420" x2="400" y2="750"/>
+                      <line x1="300" y1="420" x2="80" y2="750"/>
+                      <line x1="300" y1="420" x2="520" y2="750"/>
+                      <line x1="300" y1="420" x2="-60" y2="750"/>
+                      <line x1="300" y1="420" x2="660" y2="750"/>
+                    </g>
+                    <text x="300" y="118" text-anchor="middle" class="svg-display" font-size="60" font-weight="800" fill="none" stroke="#f4f4ed" stroke-width="1.5" letter-spacing="-1">NÉBULEUSE</text>
+                    <text x="300" y="158" text-anchor="middle" class="svg-mono" font-size="13" fill="#ff5a36" letter-spacing="4">FESTIVAL · 12—14.07.26</text>
+                  </svg>
+                </div>
+                <div class="card__meta">
+                  <span class="card__num mono">04</span>
+                  <div class="card__info">
+                    <h3 class="card__name">Nébuleuse Festival</h3>
+                    <p class="card__desc">Expérience immersive et billetterie pour un festival de musique électronique</p>
+                  </div>
+                  <span class="card__year mono">2025</span>
+                </div>
+                <ul class="card__tags mono"><li>Immersif</li><li>Audio-réactif</li><li>Billetterie</li></ul>
+              </a>
+            </article>
+
+            <article class="card" data-cursor="Voir le projet">
+              <a href="projet.html?p=kinetik" class="card__link">
+                <div class="card__media">
+                  <svg class="cover cover--kin" viewBox="0 0 600 750" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+                    <defs>
+                      <pattern id="k-grid" width="50" height="50" patternUnits="userSpaceOnUse"><path d="M50 0 H0 V50" fill="none" stroke="#f4f4ed" stroke-opacity=".06"/></pattern>
+                    </defs>
+                    <rect width="600" height="750" fill="#111112"/>
+                    <rect width="600" height="750" fill="url(#k-grid)"/>
+                    <text x="36" y="80" class="svg-mono" font-size="14" fill="#f4f4ed" letter-spacing="4">KINETIK<tspan fill="#d2ff00"> LAB</tspan></text>
+                    <text x="564" y="80" text-anchor="end" class="svg-mono" font-size="12" fill="#f4f4ed" fill-opacity=".5" letter-spacing="2">LAP 42 / 57</text>
+                    <text x="30" y="290" class="svg-display" font-size="170" font-weight="700" fill="#f4f4ed" letter-spacing="-8">312</text>
+                    <text x="40" y="330" class="svg-mono" font-size="18" fill="#d2ff00" letter-spacing="4">KM/H · VITESSE DE POINTE</text>
+                    <text x="36" y="430" class="svg-mono" font-size="11" fill="#f4f4ed" fill-opacity=".5" letter-spacing="2">SPEED</text>
+                    <path class="cover__trace" d="M36 520 C 90 440, 120 440, 160 470 S 230 560, 270 520 S 330 430, 380 450 S 450 540, 500 500 S 550 440, 580 450" fill="none" stroke="#d2ff00" stroke-width="3"/>
+                    <text x="36" y="575" class="svg-mono" font-size="11" fill="#f4f4ed" fill-opacity=".5" letter-spacing="2">THROTTLE</text>
+                    <path class="cover__trace cover__trace--2" d="M36 600 H120 V640 H170 V600 H300 V650 H340 V600 H470 V640 H510 V600 H580" fill="none" stroke="#f4f4ed" stroke-opacity=".7" stroke-width="2"/>
+                    <text x="36" y="690" class="svg-mono" font-size="11" fill="#f4f4ed" fill-opacity=".5" letter-spacing="2">BRAKE</text>
+                    <path class="cover__trace cover__trace--3" d="M36 720 H124 V700 H160 V720 H306 V695 H336 V720 H476 V702 H506 V720 H580" fill="none" stroke="#9b7bff" stroke-width="2"/>
+                  </svg>
+                </div>
+                <div class="card__meta">
+                  <span class="card__num mono">05</span>
+                  <div class="card__info">
+                    <h3 class="card__name">Kinetik Lab</h3>
+                    <p class="card__desc">Plateforme de data-visualisation temps réel pour la performance sportive</p>
+                  </div>
+                  <span class="card__year mono">2025</span>
+                </div>
+                <ul class="card__tags mono"><li>Data-viz</li><li>Dashboard</li><li>Temps réel</li></ul>
+              </a>
+            </article>
+
+            <article class="card" data-cursor="Voir le projet">
+              <a href="projet.html?p=sable" class="card__link">
+                <div class="card__media">
+                  <svg class="cover cover--sable" viewBox="0 0 600 750" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+                    <defs>
+                      <linearGradient id="s-bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#efe5d3"/><stop offset="1" stop-color="#ddc9ab"/></linearGradient>
+                      <linearGradient id="s-arch" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#d0784a"/><stop offset="1" stop-color="#a95631"/></linearGradient>
+                    </defs>
+                    <rect width="600" height="750" fill="url(#s-bg)"/>
+                    <circle cx="470" cy="150" r="60" fill="#f6b27a" fill-opacity=".8"/>
+                    <g class="cover__float cover__float--slow">
+                      <path d="M60 640 V380 A70 70 0 0 1 200 380 V640 Z" fill="url(#s-arch)"/>
+                      <path d="M230 640 V300 A70 70 0 0 1 370 300 V640 Z" fill="url(#s-arch)"/>
+                      <path d="M400 640 V420 A70 70 0 0 1 540 420 V640 Z" fill="url(#s-arch)"/>
+                      <path d="M92 640 V392 A38 38 0 0 1 168 392 V640 Z" fill="#6f3018" fill-opacity=".55"/>
+                      <path d="M262 640 V312 A38 38 0 0 1 338 312 V640 Z" fill="#6f3018" fill-opacity=".55"/>
+                      <path d="M432 640 V432 A38 38 0 0 1 508 432 V640 Z" fill="#6f3018" fill-opacity=".55"/>
+                    </g>
+                    <path d="M200 640 L300 750 H160 L60 640 Z M370 640 L470 750 H330 L230 640 Z M540 640 L640 750 H500 L400 640 Z" fill="#3a2418" fill-opacity=".12"/>
+                    <rect y="640" width="600" height="2" fill="#3a2418" fill-opacity=".3"/>
+                    <text x="40" y="96" class="svg-display" font-size="34" font-weight="600" fill="#3a2418" letter-spacing="2">ATELIER</text>
+                    <text x="40" y="140" class="svg-display" font-size="34" font-weight="300" fill="#3a2418" letter-spacing="2">SABLE</text>
+                    <text x="40" y="710" class="svg-mono" font-size="12" fill="#3a2418" fill-opacity=".7" letter-spacing="3">ARCHITECTURE — MARSEILLE</text>
+                  </svg>
+                </div>
+                <div class="card__meta">
+                  <span class="card__num mono">06</span>
+                  <div class="card__info">
+                    <h3 class="card__name">Atelier Sable</h3>
+                    <p class="card__desc">Portfolio éditorial pour un cabinet d’architecture méditerranéen</p>
+                  </div>
+                  <span class="card__year mono">2024</span>
+                </div>
+                <ul class="card__tags mono"><li>Éditorial</li><li>Portfolio</li><li>CMS</li></ul>
+              </a>
+            </article>
+
+            <div class="card card--end">
+              <a href="#contact" class="end-cta magnetic" data-cursor="Go&nbsp;!">
+                <span class="end-cta__label mono">Votre projet ici</span>
+                <span class="end-cta__big">Prendre<br>le départ</span>
+                <span class="end-cta__arrow"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="work__progress" aria-hidden="true"><i data-work-progress></i></div>
+      </div>
+    </section>
+
+    <!-- ============ EXPERTISES ============ -->
+    <section class="services" id="expertises" data-theme="light">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow mono" data-reveal>(04) — Expertises</p>
+            <h2 class="h-display" data-reveal>Ce que<br>nous faisons</h2>
+          </div>
+          <p class="section-head__lead" data-reveal>De l’idée au lancement, une seule équipe — stratèges, designers, développeurs 3D — pour un résultat sans compromis. La bonne histoire, racontée avec le bon médium.</p>
+        </div>
+
+        <ul class="svc" data-accordion>
+          <li class="svc__item" data-reveal>
+            <button class="svc__row" type="button" aria-expanded="false">
+              <span class="svc__num mono">01</span>
+              <span class="svc__name">Sites 3D &amp; WebGL</span>
+              <span class="svc__tags mono">Three.js · Shaders · Temps réel</span>
+              <span class="svc__plus" aria-hidden="true"></span>
+            </button>
+            <div class="svc__panel"><div class="svc__panel-inner">
+              <p>Des univers interactifs en temps réel, fluides sur tous les écrans. Shaders sur-mesure, optimisation GPU et chargement progressif&#8239;: des expériences qui marquent, sans jamais sacrifier la performance.</p>
+              <ul class="pills"><li>Sites immersifs</li><li>Configurateurs 3D</li><li>Microsites de lancement</li><li>Expériences événementielles</li></ul>
+            </div></div>
+          </li>
+          <li class="svc__item" data-reveal>
+            <button class="svc__row" type="button" aria-expanded="false">
+              <span class="svc__num mono">02</span>
+              <span class="svc__name">Storytelling &amp; motion</span>
+              <span class="svc__tags mono">Narration · Scroll · Animation</span>
+              <span class="svc__plus" aria-hidden="true"></span>
+            </button>
+            <div class="svc__panel"><div class="svc__panel-inner">
+              <p>Chaque scroll raconte quelque chose. Rythme, narration, transitions&#8239;: nous construisons des parcours éditoriaux qui transforment une simple visite en souvenir.</p>
+              <ul class="pills"><li>Direction narrative</li><li>Scrollytelling</li><li>Motion design</li><li>Micro-interactions</li></ul>
+            </div></div>
+          </li>
+          <li class="svc__item" data-reveal>
+            <button class="svc__row" type="button" aria-expanded="false">
+              <span class="svc__num mono">03</span>
+              <span class="svc__name">Identité de marque</span>
+              <span class="svc__tags mono">Stratégie · Logo · Système</span>
+              <span class="svc__plus" aria-hidden="true"></span>
+            </button>
+            <div class="svc__panel"><div class="svc__panel-inner">
+              <p>Logo, système visuel, typographie, ton de voix. Des identités pensées pour le digital d’abord, qui vivent aussi bien en mouvement qu’à l’arrêt.</p>
+              <ul class="pills"><li>Plateforme de marque</li><li>Logo &amp; système</li><li>Brand guidelines</li><li>Identité animée</li></ul>
+            </div></div>
+          </li>
+          <li class="svc__item" data-reveal>
+            <button class="svc__row" type="button" aria-expanded="false">
+              <span class="svc__num mono">04</span>
+              <span class="svc__name">Design produit UX/UI</span>
+              <span class="svc__tags mono">Recherche · Prototype · Design system</span>
+              <span class="svc__plus" aria-hidden="true"></span>
+            </button>
+            <div class="svc__panel"><div class="svc__panel-inner">
+              <p>Applications, plateformes, dashboards. Une UX rigoureuse, testée avec de vrais utilisateurs, et une interface qui donne envie de revenir.</p>
+              <ul class="pills"><li>Recherche utilisateur</li><li>Prototypage</li><li>Design system</li><li>Tests &amp; itérations</li></ul>
+            </div></div>
+          </li>
+          <li class="svc__item" data-reveal>
+            <button class="svc__row" type="button" aria-expanded="false">
+              <span class="svc__num mono">05</span>
+              <span class="svc__name">Développement &amp; perf.</span>
+              <span class="svc__tags mono">Front-end · Headless · SEO</span>
+              <span class="svc__plus" aria-hidden="true"></span>
+            </button>
+            <div class="svc__panel"><div class="svc__panel-inner">
+              <p>Code propre, sites rapides, référencement solide. Webflow, Nuxt, Next.js ou sur-mesure&#8239;: la bonne technologie pour le bon projet — et un score Lighthouse au vert.</p>
+              <ul class="pills"><li>Front-end créatif</li><li>CMS headless</li><li>SEO technique</li><li>Accessibilité</li></ul>
+            </div></div>
+          </li>
+          <li class="svc__item" data-reveal>
+            <button class="svc__row" type="button" aria-expanded="false">
+              <span class="svc__num mono">06</span>
+              <span class="svc__name">Films &amp; contenus 3D</span>
+              <span class="svc__tags mono">Vidéo · Produit · Social</span>
+              <span class="svc__plus" aria-hidden="true"></span>
+            </button>
+            <div class="svc__panel"><div class="svc__panel-inner">
+              <p>Films de marque, animations produit, contenus pour les réseaux. Le même niveau d’exigence, image par image.</p>
+              <ul class="pills"><li>Films 3D</li><li>Animation produit</li><li>Contenus sociaux</li><li>Motion graphics</li></ul>
+            </div></div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ EN PISTE / HORS PISTE ============ -->
+    <section class="split" id="studio" data-theme="light">
+      <a href="#travaux" class="split__half split__half--on" data-cursor="Projets">
+        <span class="split__deco split__deco--checker" aria-hidden="true"></span>
+        <span class="split__top mono"><span>(05) — Studio</span><span>Projets clients</span></span>
+        <span class="split__big">En<br>piste</span>
+        <span class="split__bottom">
+          <span class="split__text">Stratégie, design et production pour nos clients. Là où se gagnent les courses.</span>
+          <span class="split__btn" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M7 17L17 7M9 7h8v8"/></svg></span>
+        </span>
+      </a>
+      <a href="#journal" class="split__half split__half--off" data-cursor="Le Lab">
+        <span class="split__deco split__deco--blobs" aria-hidden="true"><i></i><i></i><i></i></span>
+        <span class="split__top mono"><span>Lab</span><span>R&amp;D · Expériences</span></span>
+        <span class="split__big">Hors<br>piste</span>
+        <span class="split__bottom">
+          <span class="split__text">Notre laboratoire&#8239;: prototypes WebGL, IA générative et expériences libres. Là où naissent les idées.</span>
+          <span class="split__btn" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M7 17L17 7M9 7h8v8"/></svg></span>
+        </span>
+      </a>
+    </section>
+
+    <!-- ============ PROCESS — CIRCUIT ============ -->
+    <section class="process" id="process" data-theme="dark">
+      <div class="process__pin" data-process>
+        <div class="process__left">
+          <p class="eyebrow mono">(06) — Process</p>
+          <h2 class="h-display h-display--sm">Le Grand Prix<br><span class="lime">d’un projet.</span></h2>
+          <div class="process__lap mono" aria-hidden="true">
+            <span>Tour</span>
+            <span class="process__lap-num"><b data-lap>1</b>/5</span>
+            <span class="process__sector" data-sector>Secteur 1</span>
+          </div>
+          <ol class="steps" data-steps>
+            <li class="step is-active">
+              <span class="step__meta mono">T1 · Semaines 1–2</span>
+              <h3 class="step__title">Qualifications</h3>
+              <p class="step__text">Immersion, audit, entretiens. On comprend votre marché, vos utilisateurs et votre ambition avant de dessiner quoi que ce soit.</p>
+            </li>
+            <li class="step">
+              <span class="step__meta mono">T2 · Semaines 2–3</span>
+              <h3 class="step__title">Stratégie</h3>
+              <p class="step__text">Architecture, narration, objectifs mesurables. La ligne de course est tracée — chaque virage a une raison d’être.</p>
+            </li>
+            <li class="step">
+              <span class="step__meta mono">T3 · Semaines 3–6</span>
+              <h3 class="step__title">Design</h3>
+              <p class="step__text">Direction artistique, prototypes animés, tests. Vous voyez et ressentez le projet très tôt, puis on affine ensemble.</p>
+            </li>
+            <li class="step">
+              <span class="step__meta mono">T4 · Semaines 6–10</span>
+              <h3 class="step__title">Développement</h3>
+              <p class="step__text">WebGL, CMS, intégrations, performance. Un code propre, testé sur chaque écran, optimisé au millième.</p>
+            </li>
+            <li class="step">
+              <span class="step__meta mono">T5 · Lancement</span>
+              <h3 class="step__title">Drapeau à damier</h3>
+              <p class="step__text">Mise en ligne, mesure, itérations. Et on reste à vos côtés pour la saison suivante.</p>
+            </li>
+          </ol>
+        </div>
+
+        <div class="process__track">
+          <svg class="circuit" viewBox="0 0 800 600" aria-hidden="true">
+            <defs>
+              <filter id="glow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="6" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+              <pattern id="finish" width="8" height="8" patternUnits="userSpaceOnUse"><rect width="8" height="8" fill="#f4f4ed"/><rect width="4" height="4" fill="#0d0e0a"/><rect x="4" y="4" width="4" height="4" fill="#0d0e0a"/></pattern>
+            </defs>
+            <path class="circuit__outer" d="M140 440 C 90 440 60 400 60 350 L 60 200 C 60 130 110 90 180 90 L 330 90 C 380 90 400 120 420 160 C 440 200 470 215 510 200 L 640 140 C 700 115 750 150 745 210 C 740 260 700 280 650 290 L 520 315 C 470 325 460 370 500 395 C 540 420 620 400 680 420 C 740 440 745 500 690 512 L 300 520 C 240 522 200 440 140 440 Z"/>
+            <path class="circuit__road" d="M140 440 C 90 440 60 400 60 350 L 60 200 C 60 130 110 90 180 90 L 330 90 C 380 90 400 120 420 160 C 440 200 470 215 510 200 L 640 140 C 700 115 750 150 745 210 C 740 260 700 280 650 290 L 520 315 C 470 325 460 370 500 395 C 540 420 620 400 680 420 C 740 440 745 500 690 512 L 300 520 C 240 522 200 440 140 440 Z"/>
+            <path class="circuit__dash" d="M140 440 C 90 440 60 400 60 350 L 60 200 C 60 130 110 90 180 90 L 330 90 C 380 90 400 120 420 160 C 440 200 470 215 510 200 L 640 140 C 700 115 750 150 745 210 C 740 260 700 280 650 290 L 520 315 C 470 325 460 370 500 395 C 540 420 620 400 680 420 C 740 440 745 500 690 512 L 300 520 C 240 522 200 440 140 440 Z"/>
+            <path class="circuit__progress" data-circuit d="M140 440 C 90 440 60 400 60 350 L 60 200 C 60 130 110 90 180 90 L 330 90 C 380 90 400 120 420 160 C 440 200 470 215 510 200 L 640 140 C 700 115 750 150 745 210 C 740 260 700 280 650 290 L 520 315 C 470 325 460 370 500 395 C 540 420 620 400 680 420 C 740 440 745 500 690 512 L 300 520 C 240 522 200 440 140 440 Z" filter="url(#glow)"/>
+            <rect x="136" y="424" width="10" height="32" fill="url(#finish)"/>
+            <g data-turns class="circuit__turns"></g>
+            <g data-car class="circuit__car">
+              <circle r="16" class="circuit__car-halo"/>
+              <circle r="8" class="circuit__car-dot"/>
+            </g>
+          </svg>
+          <div class="process__hud mono" aria-hidden="true">
+            <span>Circuit MIXTE · 4,2 km</span>
+            <span data-hud-pct>0%</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CLIENTS + TÉMOIGNAGES ============ -->
+    <section class="voices" data-theme="light">
+      <div class="voices__marquee" aria-label="Quelques clients">
+        <div class="marquee" data-marquee data-speed="0.6">
+          <div class="marquee__inner">
+            <span>Volta Motors</span><i>✦</i><span>Maison Aube</span><i>✦</i><span>Orbe</span><i>✦</i><span>Kinetik</span><i>✦</i><span>Nébuleuse</span><i>✦</i><span>Atelier Sable</span><i>♥‿♥</i>
+          </div>
+        </div>
+        <div class="marquee marquee--outline" data-marquee data-speed="-0.45">
+          <div class="marquee__inner">
+            <span>Helio Air</span><i>✦</i><span>Paloma</span><i>✦</i><span>Strata</span><i>✦</i><span>Lumen Health</span><i>✦</i><span>Cobalt</span><i>✦</i><span>Rivage</span><i>✦</i>
+          </div>
+        </div>
+      </div>
+
+      <div class="container voices__grid">
+        <div class="voices__intro">
+          <p class="eyebrow mono" data-reveal>(07) — Témoignages</p>
+          <h2 class="h-display" data-reveal>Le grand travail<br>se fait <span class="script script--big">à deux.</span></h2>
+          <p data-reveal>Travailler avec nous, c’est travailler directement avec les fondateurs. Des relations longues, honnêtes, construites sur la confiance — et des résultats.</p>
+        </div>
+
+        <div class="quotes" data-quotes>
+          <div class="quotes__stage">
+            <figure class="quote is-active">
+              <blockquote>«&#8239;MIXTE a compris notre marque mieux que nous-mêmes. Le nouveau site a doublé notre taux de conversion en trois mois — on nous en parle encore en rendez-vous.&#8239;»</blockquote>
+              <figcaption><span class="quote__avatar" style="--a:#d2ff00">CD</span><span><b>Claire Delmas</b><br><span class="mono">Directrice marketing · Volta Motors</span></span></figcaption>
+            </figure>
+            <figure class="quote">
+              <blockquote>«&#8239;Une équipe rare&#8239;: exigeante sur chaque détail, rapide, et toujours de bonne humeur. Notre lancement a été élu Site du Jour dès la première semaine.&#8239;»</blockquote>
+              <figcaption><span class="quote__avatar" style="--a:#9b7bff">HB</span><span><b>Hugo Bernard</b><br><span class="mono">CEO · Orbe Finance</span></span></figcaption>
+            </figure>
+            <figure class="quote">
+              <blockquote>«&#8239;Ils ont transformé un brief complexe en une expérience limpide. Collaboration fluide, délais tenus, résultat bluffant. On repart pour une deuxième saison.&#8239;»</blockquote>
+              <figcaption><span class="quote__avatar" style="--a:#ff5a36">SM</span><span><b>Sofia Marin</b><br><span class="mono">Head of Brand · Maison Aube</span></span></figcaption>
+            </figure>
+          </div>
+          <div class="quotes__ctrl">
+            <div class="quotes__bars" data-quote-bars>
+              <button type="button" aria-label="Témoignage 1" class="is-active"><i></i></button>
+              <button type="button" aria-label="Témoignage 2"><i></i></button>
+              <button type="button" aria-label="Témoignage 3"><i></i></button>
+            </div>
+            <div class="quotes__arrows">
+              <button type="button" class="round-btn" data-quote-prev aria-label="Témoignage précédent"><svg viewBox="0 0 24 24"><path d="M19 12H5M11 6l-6 6 6 6"/></svg></button>
+              <button type="button" class="round-btn" data-quote-next aria-label="Témoignage suivant"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ DISTINCTIONS ============ -->
+    <section class="awards" id="distinctions" data-theme="dark">
+      <div class="container">
+        <div class="awards__head">
+          <div>
+            <p class="eyebrow mono" data-reveal>(08) — Distinctions</p>
+            <h2 class="h-display" data-reveal>Reconnus par<br>ceux qui <span class="iri">savent.</span></h2>
+          </div>
+          <div class="awards__total" data-reveal>
+            <span class="awards__total-num"><b data-count="37">0</b></span>
+            <span class="mono">Prix &amp; mentions<br>depuis 2019</span>
+          </div>
+        </div>
+
+        <div class="awards__tabs" role="tablist" aria-label="Organismes" data-tabs>
+          <button role="tab" aria-selected="true" aria-controls="tab-aww" id="t-aww" class="is-active">Awwwards<sup>14</sup></button>
+          <button role="tab" aria-selected="false" aria-controls="tab-fwa" id="t-fwa" tabindex="-1">FWA<sup>11</sup></button>
+          <button role="tab" aria-selected="false" aria-controls="tab-css" id="t-css" tabindex="-1">CSS Design Awards<sup>8</sup></button>
+          <button role="tab" aria-selected="false" aria-controls="tab-web" id="t-web" tabindex="-1">Webby<sup>4</sup></button>
+        </div>
+
+        <div class="awards__table">
+          <div class="awards__cols mono" aria-hidden="true"><span>Projet</span><span>Distinction</span><span>Année</span></div>
+
+          <ul class="awards__panel is-active" role="tabpanel" id="tab-aww" aria-labelledby="t-aww">
+            <li><span class="a-proj">Volta Motors</span><span class="a-dist">Site of the Day</span><span class="a-year mono">2026</span></li>
+            <li><span class="a-proj">Volta Motors</span><span class="a-dist">Developer Award</span><span class="a-year mono">2026</span></li>
+            <li><span class="a-proj">Orbe Finance</span><span class="a-dist">Site of the Day</span><span class="a-year mono">2025</span></li>
+            <li><span class="a-proj">Nébuleuse Festival</span><span class="a-dist">Site of the Month — Nominé</span><span class="a-year mono">2025</span></li>
+            <li><span class="a-proj">MIXTE Lab</span><span class="a-dist">Honorable Mention</span><span class="a-year mono">2024</span></li>
+          </ul>
+          <ul class="awards__panel" role="tabpanel" id="tab-fwa" aria-labelledby="t-fwa" hidden>
+            <li><span class="a-proj">Maison Aube</span><span class="a-dist">FWA of the Day</span><span class="a-year mono">2026</span></li>
+            <li><span class="a-proj">Kinetik Lab</span><span class="a-dist">FWA of the Day</span><span class="a-year mono">2025</span></li>
+            <li><span class="a-proj">Nébuleuse Festival</span><span class="a-dist">FWA of the Day — Mobile</span><span class="a-year mono">2025</span></li>
+            <li><span class="a-proj">MIXTE Studio</span><span class="a-dist">FWA of the Day</span><span class="a-year mono">2023</span></li>
+          </ul>
+          <ul class="awards__panel" role="tabpanel" id="tab-css" aria-labelledby="t-css" hidden>
+            <li><span class="a-proj">Orbe Finance</span><span class="a-dist">Website of the Day</span><span class="a-year mono">2025</span></li>
+            <li><span class="a-proj">Orbe Finance</span><span class="a-dist">Best UI Design</span><span class="a-year mono">2025</span></li>
+            <li><span class="a-proj">Atelier Sable</span><span class="a-dist">Best Innovation</span><span class="a-year mono">2024</span></li>
+          </ul>
+          <ul class="awards__panel" role="tabpanel" id="tab-web" aria-labelledby="t-web" hidden>
+            <li><span class="a-proj">Volta Motors</span><span class="a-dist">Winner — Best Use of Motion</span><span class="a-year mono">2026</span></li>
+            <li><span class="a-proj">Kinetik Lab</span><span class="a-dist">Winner — Technical Achievement</span><span class="a-year mono">2025</span></li>
+            <li><span class="a-proj">Nébuleuse Festival</span><span class="a-dist">Honoree — Events</span><span class="a-year mono">2025</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ JOURNAL ============ -->
+    <section class="journal" id="journal" data-theme="light">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow mono" data-reveal>(09) — Journal</p>
+            <h2 class="h-display" data-reveal>Notes du<br>paddock</h2>
+          </div>
+          <a href="#" class="btn btn--dark magnetic" data-reveal><span class="btn__inner"><span class="btn__text" data-hover="Tous les articles">Tous les articles</span></span></a>
+        </div>
+
+        <div class="posts">
+          <article class="post" data-reveal data-cursor="Lire">
+            <a href="#" class="post__link">
+              <div class="post__media">
+                <svg viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+                  <rect width="400" height="300" fill="#0d0e0a"/>
+                  <g class="post__spin" fill="none" stroke="#d2ff00" stroke-width="1.4" style="transform-origin:200px 150px">
+                    <circle cx="200" cy="150" r="95"/>
+                    <ellipse cx="200" cy="150" rx="95" ry="30"/>
+                    <ellipse cx="200" cy="150" rx="95" ry="62"/>
+                    <ellipse cx="200" cy="150" rx="30" ry="95"/>
+                    <ellipse cx="200" cy="150" rx="62" ry="95"/>
+                  </g>
+                  <circle cx="200" cy="150" r="5" fill="#d2ff00"/>
+                </svg>
+              </div>
+              <div class="post__meta mono"><span class="tag">Tech</span><span>6 min · 02.10.2026</span></div>
+              <h3 class="post__title">WebGL en 2026&#8239;: ce qui change vraiment pour les marques</h3>
+            </a>
+          </article>
+          <article class="post" data-reveal data-cursor="Lire">
+            <a href="#" class="post__link">
+              <div class="post__media">
+                <svg viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+                  <rect width="400" height="300" fill="#c9d2e7"/>
+                  <circle cx="320" cy="60" r="80" fill="#ffd3e2" opacity=".8"/>
+                  <g class="post__stack">
+                    <rect x="90" y="70" width="180" height="120" rx="18" fill="#f4f4ed" opacity=".5"/>
+                    <rect x="110" y="95" width="180" height="120" rx="18" fill="#f4f4ed" opacity=".75"/>
+                    <rect x="130" y="120" width="180" height="120" rx="18" fill="#181520"/>
+                    <rect x="150" y="145" width="80" height="10" rx="5" fill="#d2ff00"/>
+                    <rect x="150" y="167" width="130" height="6" rx="3" fill="#f4f4ed" opacity=".4"/>
+                    <rect x="150" y="181" width="100" height="6" rx="3" fill="#f4f4ed" opacity=".4"/>
+                  </g>
+                </svg>
+              </div>
+              <div class="post__meta mono"><span class="tag">Design</span><span>4 min · 18.09.2026</span></div>
+              <h3 class="post__title">Scrollytelling&#8239;: l’art de raconter en faisant défiler</h3>
+            </a>
+          </article>
+          <article class="post" data-reveal data-cursor="Lire">
+            <a href="#" class="post__link">
+              <div class="post__media">
+                <svg viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+                  <rect width="400" height="300" fill="#d2ff00"/>
+                  <path d="M90 220 A110 110 0 0 1 310 220" fill="none" stroke="#0d0e0a" stroke-opacity=".15" stroke-width="22" stroke-linecap="round"/>
+                  <path d="M90 220 A110 110 0 0 1 280 142" fill="none" stroke="#0d0e0a" stroke-width="22" stroke-linecap="round"/>
+                  <g class="post__needle" style="transform-origin:200px 220px"><line x1="200" y1="220" x2="268" y2="160" stroke="#0d0e0a" stroke-width="5" stroke-linecap="round"/></g>
+                  <circle cx="200" cy="220" r="12" fill="#0d0e0a"/>
+                  <text x="200" y="275" text-anchor="middle" class="svg-display" font-size="28" font-weight="700" fill="#0d0e0a">0,8 s</text>
+                </svg>
+              </div>
+              <div class="post__meta mono"><span class="tag">Stratégie</span><span>5 min · 03.09.2026</span></div>
+              <h3 class="post__title">Performance&#8239;: pourquoi chaque milliseconde compte</h3>
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="contact" id="contact" data-theme="lime">
+      <div class="container">
+        <div class="contact__head">
+          <p class="eyebrow mono" data-reveal>(10) — Contact</p>
+          <h2 class="contact__title" data-reveal>Prêt pour<br>le départ&#8239;?</h2>
+        </div>
+
+        <div class="contact__grid">
+          <aside class="contact__aside" data-reveal>
+            <p class="contact__lead">Parlez-nous de votre projet. Nous répondons à chaque demande sous 24&nbsp;h ouvrées — avec de vraies idées, pas un devis automatique.</p>
+            <dl class="contact__info">
+              <div><dt class="mono">Écrire</dt><dd><a href="mailto:bonjour@mixte.studio" class="u-link">bonjour@mixte.studio</a></dd></div>
+              <div><dt class="mono">Appeler</dt><dd><a href="tel:+33100000000" class="u-link">+33 1 00 00 00 00</a></dd></div>
+              <div><dt class="mono">Passer</dt><dd>12 rue du Circuit, 75011 Paris</dd></div>
+            </dl>
+          </aside>
+
+          <form class="form" data-form novalidate data-reveal>
+            <div class="form__body">
+              <fieldset class="form__group">
+                <legend class="mono">Vous avez besoin de…</legend>
+                <div class="chips">
+                  <label class="chip-input"><input type="checkbox" name="besoin" value="Site 3D"><span>Site 3D / WebGL</span></label>
+                  <label class="chip-input"><input type="checkbox" name="besoin" value="Site vitrine"><span>Site storytelling</span></label>
+                  <label class="chip-input"><input type="checkbox" name="besoin" value="Identité"><span>Identité de marque</span></label>
+                  <label class="chip-input"><input type="checkbox" name="besoin" value="Produit"><span>App / Produit</span></label>
+                  <label class="chip-input"><input type="checkbox" name="besoin" value="Vidéo"><span>Film 3D</span></label>
+                </div>
+              </fieldset>
+              <fieldset class="form__group">
+                <legend class="mono">Budget estimé</legend>
+                <div class="chips">
+                  <label class="chip-input"><input type="radio" name="budget" value="<15k"><span>&lt; 15 k€</span></label>
+                  <label class="chip-input"><input type="radio" name="budget" value="15-40k"><span>15 – 40 k€</span></label>
+                  <label class="chip-input"><input type="radio" name="budget" value="40-80k"><span>40 – 80 k€</span></label>
+                  <label class="chip-input"><input type="radio" name="budget" value="80k+"><span>80 k€ +</span></label>
+                </div>
+              </fieldset>
+              <div class="form__row">
+                <div class="field">
+                  <input id="f-name" name="nom" type="text" placeholder=" " autocomplete="name" required>
+                  <label for="f-name">Nom complet *</label>
+                  <span class="field__err mono">Indiquez votre nom</span>
+                </div>
+                <div class="field">
+                  <input id="f-mail" name="email" type="email" placeholder=" " autocomplete="email" required>
+                  <label for="f-mail">E-mail professionnel *</label>
+                  <span class="field__err mono">E-mail invalide</span>
+                </div>
+              </div>
+              <div class="field">
+                <input id="f-company" name="entreprise" type="text" placeholder=" " autocomplete="organization">
+                <label for="f-company">Entreprise</label>
+              </div>
+              <div class="field">
+                <textarea id="f-msg" name="message" rows="4" placeholder=" " required></textarea>
+                <label for="f-msg">Votre projet en quelques mots *</label>
+                <span class="field__err mono">Dites-nous en un peu plus</span>
+              </div>
+              <div class="form__submit">
+                <p class="mono form__note">En envoyant ce formulaire, vous acceptez notre <a href="#" class="u-link">politique de confidentialité</a>.</p>
+                <button type="submit" class="btn btn--lime btn--xl magnetic"><span class="btn__inner"><span class="btn__text" data-hover="Feu vert →">Envoyer la demande</span></span></button>
+              </div>
+            </div>
+            <div class="form__success" aria-live="polite">
+              <span class="form__success-face">♥‿♥</span>
+              <h3>Message reçu&#8239;!</h3>
+              <p>Merci — on revient vers vous sous 24&nbsp;h ouvrées.</p>
+              <button type="button" class="u-link mono" data-form-reset>Envoyer une autre demande</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer" data-theme="dark">
+    <div class="container">
+      <div class="footer__top">
+        <div class="footer__intro">
+          <p class="footer__statement">Toujours un tour<br><span class="script">d’avance.</span></p>
+          <p class="footer__owner"><span class="mono">Fondateur &amp; propriétaire</span><span class="footer__owner-name"><i class="pulse"></i>Ebubekir ARTI</span></p>
+        </div>
+        <a href="#top" class="round-btn round-btn--lg magnetic" data-to-top aria-label="Retour en haut"><svg viewBox="0 0 24 24"><path d="M12 19V5M6 11l6-6 6 6"/></svg></a>
+      </div>
+
+      <div class="footer__cols">
+        <div>
+          <p class="mono footer__label">Pages</p>
+          <ul>
+            <li><a href="#travaux" class="u-link">Travaux</a></li>
+            <li><a href="#expertises" class="u-link">Expertises</a></li>
+            <li><a href="#process" class="u-link">Process</a></li>
+            <li><a href="#journal" class="u-link">Journal</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="mono footer__label">Suivre</p>
+          <ul>
+            <li><a href="#" class="u-link">Instagram</a></li>
+            <li><a href="#" class="u-link">LinkedIn</a></li>
+            <li><a href="#" class="u-link">Behance</a></li>
+            <li><a href="#" class="u-link">Awwwards</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="mono footer__label">Contact</p>
+          <ul>
+            <li><a href="mailto:bonjour@mixte.studio" class="u-link">bonjour@mixte.studio</a></li>
+            <li><a href="tel:+33100000000" class="u-link">+33 1 00 00 00 00</a></li>
+            <li>12 rue du Circuit<br>75011 Paris</li>
+          </ul>
+        </div>
+        <div class="footer__news">
+          <p class="mono footer__label">Newsletter — une fois par mois</p>
+          <form class="news" data-news novalidate>
+            <label for="n-mail" class="sr-only">Votre e-mail</label>
+            <input id="n-mail" type="email" placeholder="Votre e-mail" required>
+            <button type="submit" aria-label="S’inscrire"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+          </form>
+          <p class="mono footer__news-msg" data-news-msg aria-live="polite"></p>
+        </div>
+      </div>
+
+      <div class="footer__mark" aria-hidden="true">
+        <svg viewBox="0 0 1000 200" preserveAspectRatio="xMidYMax meet">
+          <text x="500" y="192" text-anchor="middle" textLength="990" lengthAdjust="spacing">MIXTE</text>
+        </svg>
+      </div>
+
+      <div class="footer__bottom mono">
+        <span>© <span data-year>2026</span> Ebubekir ARTI — MIXTE Studio. Tous droits réservés.</span>
+        <span class="footer__legal"><a href="#" class="u-link">Mentions légales</a><a href="#" class="u-link">Confidentialité</a></span>
+        <span>Paris <time data-clock>--:--</time></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+  <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js" defer></script>
+  <script src="assets/js/hero-gl.js" defer></script>
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>
